@@ -1,0 +1,533 @@
+body {
+    text-align: center;
+    width: 800px;
+    margin: 0px auto;
+    font-family: "Montserrat", serif;
+}
+
+h2, h3 {
+    text-align: left;
+}
+
+/* /////////////Badge CSS//////////////////// */
+
+.badge-wrapper {
+    display: flex; 
+    flex-direction: column;
+}
+
+.badge-row {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.badge {
+    width: auto;
+    padding: 0.5em 1em 0.5em 1em;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin: 5px 5px;
+    font-weight: 650;
+}
+
+.badge.gray {
+    background-color: #F3F4F6;
+    color: #1F2937;
+}
+
+.badge.red {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+.badge.yellow {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.badge.green {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+.badge.blue {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+.badge.indigo {
+    background-color: #E0E7FF;
+    color: #3730A3;
+}
+
+.badge.purple {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+}
+
+.badge.pink {
+    background-color: #FCE7F3;
+    color: #9D174D;
+}
+
+.badge.round {
+    border-radius: 20px;
+}
+
+
+.badge.large {
+    font-size: 0.9em;
+}
+
+.badge.medium {
+    font-size: 0.8em;
+}
+
+.badge.small {
+    font-size: 0.7em;
+}
+
+/* /////////////Divider CSS//////////////////// */
+
+.dot-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin: 62px 0;
+  }
+  
+  .dot {
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background-color: #464646;
+  }
+
+  /* /////////////Banner CSS//////////////////// */
+
+  .banner {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    width: 700px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    box-shadow: 5px 1px 10px rgb(247, 245, 245);
+  }
+
+  .banner-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: left;
+  }
+
+  .banner-title {
+    margin: 5px 0px 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0px 5px 10px;
+  }
+
+  .banner-children {
+    margin: 5px 0px 5px 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .banner.error {
+    color: #92400E;
+    background-color: #FEF2F2;
+  }
+
+  .banner.success {
+    color: #047857;
+    background-color: #ECFDF5;
+  }
+
+  .banner.warning {
+    color: #92400E;
+    background-color: #FFFBEB;
+  }
+
+  .banner.update {
+    color: #1C51B9;
+    background-color: #EFF6FF;
+  }
+
+  .banner-close {
+    margin: 5px 10px 5px auto;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+    /* /////////////Card CSS//////////////////// */
+
+  .card-wrapper {
+    display: flex;
+  }
+
+  .card-container {
+    width:300px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 40px 5px 5px 10px;
+    padding: 20px;
+  }
+
+  .card-container:hover {
+    box-shadow: 0px 0px 10px darkgray;
+  }
+
+  .card-icon {
+    max-width:25px;
+    font-size: 25px;
+    max-height: 25px;
+    border-radius: 7px;
+    background-color: #3F75FE;
+    color: white;
+    position: absolute;
+    top: -22px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px lightgray;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  /* /////////////ToolTip Container Styles//////////////////// */
+.tooltip-container {
+  display: flex;
+  position: absolute; 
+  bottom: 100%; 
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0px 0px 15px lightgray;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin-top: 5px; 
+  z-index: 1000; 
+  width: auto;
+  --tooltip-color: #ffffff
+}
+
+.tooltip-container.sticky {
+  position: relative;
+  max-width: 400px;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.tooltip-container.dark {
+  background-color: #262626;
+  color: #FFFFFF;
+  --tooltip-color: #262626
+}
+
+.tooltip-container.blue.dark {
+  background-color: #1E40AF;
+  color: #FFFFFF;
+  --tooltip-color: #1E40AF
+}
+
+.tooltip-container.blue {
+  background-color: #E0E7FF;
+  color: #1C51B9;
+  --tooltip-color: #E0E7FF
+}
+
+.tooltip-container.purple.dark {
+  background-color: #A9229B;
+  color: #FFFFFF;
+  --tooltip-color: #A9229B
+}
+
+.tooltip-container.purple {
+  background-color: #FFF3FC;
+  color: #C7369E;
+  --tooltip-color: #FFF3FC
+}
+
+.tooltip-container.green.dark {
+  background-color: #47AA5D;
+  color: #FFFFFF;
+  --tooltip-color: #47AA5D;
+}
+
+.tooltip-container.green {
+  background-color: #E7FFF3;
+  color: #137A2A;
+  --tooltip-color: #E7FFF3
+}
+
+/* /////////////ToolTip Visibility States//////////////////// */
+.tooltip-container.visible {
+  visibility: visible;
+  opacity: 1;  
+}
+
+.tooltip-container.hidden {
+  visibility: hidden;
+  opacity: 0;  
+}
+
+/* /////////////ToolTip Text and Title//////////////////// */
+.tooltip-title {
+  margin: 0 10px 5px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: auto;
+}
+
+.tooltip-text {
+  margin: 0 10px 0px 0px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+}
+
+.tooltip-title.sticky, .tooltip-text.sticky {
+  white-space: wrap;
+}
+
+.no-title {
+  margin: 0 0 5px 0;
+}
+
+.no-icon {
+  padding: 0px 10px;
+}
+
+.no-message {
+  margin: 5px 0 0 0;
+}
+
+/* /////////////ToolTip Icon and Close Button//////////////////// */
+.tooltip-icon {
+  display: inline-block;
+  margin: 2px 10px 0px 10px;
+}
+
+.tooltip-close {
+  margin: 0px 5px 5px auto;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: right;
+  padding-left: 10px;
+}
+
+/* /////////////ToolTip Arrow/Tail Styling//////////////////// */
+.tooltip-container::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; 
+  left: 20px; 
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--tooltip-color) transparent transparent transparent;
+}
+
+/* /////////////ToolTip Trigger and Placement Container//////////////////// */
+.tooltip-trigger {
+  display: inline-block; 
+  position: relative; 
+}
+
+.tooltip-button {
+  border: none;
+  color: #1E40AF;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: auto;
+  margin: 20px 20px;
+  padding: 0px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.tooltip-placement-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 120px;
+}
+
+/* /////////////ToolTip Placement Modifiers//////////////////// */
+.tooltip-container.bottom {
+  bottom: -100%; 
+}
+
+.tooltip-container.bottom::after {
+  bottom: 100%; 
+  left: 20px; 
+  border-color: transparent transparent var(--tooltip-color) transparent;
+}
+
+.tooltip-container.left {
+  bottom: 0%; 
+  right: 100%;
+}
+
+.tooltip-container.left::after {
+  bottom: 25%; 
+  left: 100%; 
+  border-color: transparent transparent transparent var(--tooltip-color);
+}
+
+.tooltip-container.right {
+  bottom: 0%; 
+  left: 100%;
+}
+
+.tooltip-container.right::after {
+  bottom: 25%; 
+  left: -20px; 
+  border-color: transparent var(--tooltip-color) transparent transparent;
+}
+
+/* /////////////Toast CSS//////////////////// */
+
+.toast-wrapper {
+  text-align: start;
+}
+
+.basic-toast-container {
+  display: flex;
+  justify-content: center;
+}
+
+.toast-children-wrapper {
+  color: #1E40AF;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: auto;
+  margin: 20px 20px;
+  padding: 0px;
+  /* display: inline-flex; */
+  cursor: pointer;
+}
+
+.toast-item-container {
+  display: flex;
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0px 0px 15px lightgray;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin-top: 5px; 
+  z-index: 1000; 
+  width: auto;
+  transform: translateY(calc(var(--index, 0) * -10px))
+}
+
+.toast-icon {
+  display: inline-block;
+  margin: 2px 10px 0px 10px;
+}
+
+.toast-close {
+  margin: 0px 5px 5px auto;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: right;
+  padding-left: 10px;
+}
+
+.toast-title {
+  margin: 0 10px 5px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: auto;
+}
+
+.toast-text {
+  margin: 0 10px 0px 0px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+}
+
+.no-title {
+  margin: 0 0 5px 0;
+}
+
+.no-icon {
+  padding: 0px 10px;
+}
+
+.no-message {
+  margin: 5px 0 0 0;
+}
+
+.toast-item-container.hidden {
+  display: none;
+}
+
+.toast-button {
+  border: none;
+  color: #1E40AF;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: auto;
+  margin: 20px 20px;
+  padding: 0px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.toast-container{
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  bottom: 30px; 
+  left: 20px;
+  gap: 10px;
+}
+
+.togglebutton2 {
+  border: 1px solid black;
+  cursor: pointer;
+}
